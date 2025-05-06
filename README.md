@@ -1,73 +1,99 @@
-# Welcome to your Lovable project
+# Healthcare Assistant Web Application
 
-## Project info
+A comprehensive healthcare web application that provides various medical assistance features to help users manage their health and get quick medical insights.
 
-**URL**: https://lovable.dev/projects/6814f968-4a1a-4521-b5e8-6f3b0f5ab476
+## 🌟 Features
 
-## How can I edit this code?
+- **Disease Prediction**: AI-powered disease prediction based on symptoms
+- **Symptom Checker**: Interactive symptom assessment tool
+- **Health Chat**: Real-time chat interface for medical queries powered by Gemini AI
+- **Medication Management**: Track and manage your medications
+- **User Authentication**: Secure login and registration system
+- **CAPTCHA Security**: Enhanced security with CAPTCHA verification
+- **Responsive Design**: Works seamlessly across all devices
 
-There are several ways of editing your application.
+## 🚀 Tech Stack
 
-**Use Lovable**
+This project is built with modern technologies:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/6814f968-4a1a-4521-b5e8-6f3b0f5ab476) and start prompting.
+- **Frontend Framework**: React with TypeScript
+- **Build Tool**: Vite
+- **UI Components**: shadcn/ui
+- **Styling**: Tailwind CSS
+- **Backend Services**: Supabase
+- **AI Integration**: Google's Gemini AI
+- **Authentication**: Supabase Auth
 
-Changes made via Lovable will be committed automatically to this repo.
+## 💻 Getting Started
 
-**Use your preferred IDE**
+### Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Node.js (v16 or higher)
+- npm or Bun package manager
+- Supabase account for backend services
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Installation
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd HCI-Project
 ```
 
-**Edit a file directly in GitHub**
+2. Install dependencies:
+```bash
+# Using npm
+npm install
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+# Using Bun
+bun install
+```
 
-**Use GitHub Codespaces**
+3. Set up environment variables:
+Create a `.env` file in the root directory and add your Supabase credentials:
+```env
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+4. Start the development server:
+```bash
+npm run dev
+# or
+bun run dev
+```
 
-## What technologies are used for this project?
+Visit `http://localhost:5173` to see the application running.
 
-This project is built with:
+## 📁 Project Structure
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- `/src` - Main application source code
+  - `/components` - Reusable UI components
+  - `/contexts` - React context providers
+  - `/hooks` - Custom React hooks
+  - `/integrations` - Third-party service integrations
+  - `/pages` - Application pages/routes
+  - `/lib` - Utility functions and configurations
 
-## How can I deploy this project?
+## 🔒 Security Features
 
-Simply open [Lovable](https://lovable.dev/projects/6814f968-4a1a-4521-b5e8-6f3b0f5ab476) and click on Share -> Publish.
+- Secure authentication using Supabase
+- CAPTCHA verification for enhanced security
+- Protected routes and API endpoints
+- Secure data storage and transmission
 
-## Can I connect a custom domain to my Lovable project?
+## 🤝 Contributing
 
-Yes, you can!
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 📧 Contact
+
+For any queries or support, please open an issue in the repository.
+
+- email: cs22b1061@iiitdm.ac.in
+- phone: 6301179024
